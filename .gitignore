@@ -1,0 +1,16 @@
+# Secretos 
+.env
+
+# Entorno virtual 
+.venv/
+
+# Datos 
+data/
+
+# Python 
+__pycache__/
+.ipynb_checkpoints/
+
+# Editor / Sistema 
+.vscode/ 
+.DS_Store
