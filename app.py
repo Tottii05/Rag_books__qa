@@ -1,9 +1,17 @@
+"""Interfaz web: pregunta al Quijote.
+
+Ejecutar desde la raíz del repo, con el entorno activo:
+    python -m streamlit run app.py
+"""
 import logging
+
 import streamlit as st
-from src.llm import LLMError, answer
-from src.retrieval import search
+
+from src.llm import LLMError
+from src.rag import ask
 
 logger = logging.getLogger(__name__)
+
 st.set_page_config(page_title="Pregunta al Quijote", page_icon="📖")
 
 EXAMPLES = [
@@ -26,7 +34,11 @@ with st.sidebar:
         if st.button(example, width="stretch"):
             st.session_state.pending_question = example
     st.divider()
-    st.caption("RAG sobre el texto completo de *Don Quijote de la Mancha* (Project Gutenberg). Búsqueda semántica en Pinecone; las respuestas las redacta un LLM usando solo los fragmentos recuperados.")
+    st.caption(
+        "RAG sobre el texto completo de *Don Quijote de la Mancha* "
+        "(Project Gutenberg). Búsqueda semántica en Pinecone; las respuestas "
+        "las redacta un LLM usando solo los fragmentos recuperados."
+    )
 
 # ---------- Cabecera ----------
 st.title("Pregunta al Quijote")
@@ -35,38 +47,57 @@ st.caption("Cada respuesta cita el capítulo del que sale. Puedes preguntar en e
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-def render_sources(hits: list[dict]) -> None:
-    """Muestra los fragmentos del libro que se usaron para responder."""
+
+def render_sources(hits: list[dict], question: str, search_query: str) -> None:
+    """Muestra los fragmentos del libro que se usaron para responder.
+
+    question y search_query llegan como argumentos: una función no puede usar
+    variables que solo existen en otra parte del script.
+    """
     with st.expander(f"Fragmentos consultados ({len(hits)})"):
+        if search_query != question:
+            st.caption(f"Búsqueda realizada con: {search_query}")
         for hit in hits:
             st.markdown(f"**{hit['ref']}** · {hit['title']}  \n*similitud {hit['score']:.2f}*")
             st.write(hit["text"])
             st.divider()
+
 
 # ---------- Historial ----------
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
         if message.get("sources"):
-            render_sources(message["sources"])
+            render_sources(message["sources"], message["question"], message["search_query"])
 
 # ---------- Nueva pregunta ----------
-question = st.chat_input("Pregunta algo sobre el Quijote...") or st.session_state.pop("pending_question", None)
+question = st.chat_input("Pregunta algo sobre el Quijote...") or st.session_state.pop(
+    "pending_question", None
+)
+
 if question:
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user"):
         st.markdown(question)
+
     with st.chat_message("assistant"):
         with st.spinner("Buscando en el libro..."):
+            search_query = question  # valor por defecto: así existe aunque haya un error
             try:
-                hits = search(question, top_k=top_k)
-                reply = answer(question, hits)
+                result = ask(question, top_k=top_k)
+                hits, reply = result["hits"], result["answer"]
+                search_query = result["search_query"]
             except LLMError as exc:  # errores previstos, con mensaje amable
                 hits, reply = [], f"{exc}"
             except Exception:  # noqa: BLE001 - cualquier otro fallo (red, Pinecone...)
                 logger.exception("Error al responder")
-                hits, reply = [], ("No he podido consultar el libro ahora mismo. Inténtalo de nuevo en un momento.")
+                hits, reply = [], ("No he podido consultar el libro ahora mismo. "
+                                   "Inténtalo de nuevo en un momento.")
         st.markdown(reply)
         if hits:
-            render_sources(hits)
-    st.session_state.messages.append({"role": "assistant", "content": reply, "sources": hits})
+            render_sources(hits, question, search_query)
+
+    st.session_state.messages.append({
+        "role": "assistant", "content": reply, "sources": hits,
+        "question": question, "search_query": search_query,
+    })
