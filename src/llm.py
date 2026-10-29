@@ -15,7 +15,9 @@ SYSTEM_PROMPT = (
     "los fragmentos consultados; no inventes nada. "
     "Después de cada afirmación cita el capítulo entre corchetes, por ejemplo "
     "[Parte I, capítulo VIII]. "
-    "Responde en el mismo idioma en que se te pregunta, de forma clara y breve."
+    "Detecta el idioma de la pregunta y responde SIEMPRE en ese idioma "
+    "(por ejemplo, si la pregunta está en inglés, responde en inglés), aunque "
+    "los fragmentos estén en español. Sé claro y breve."
 )
 
 TRANSLATE_PROMPT = (
@@ -37,7 +39,7 @@ def get_client() -> OpenAI:
 def build_messages(question: str, hits: list[dict]) -> list[dict]:
     """Construye los mensajes del chat: instrucciones + fragmentos + pregunta."""
     fragments = "\n\n".join(f"[{hit['ref']}]\n{hit['text']}" for hit in hits)
-    user_content = f"Fragmentos:\n\n{fragments}\n\nPregunta: {question}"
+    user_content = (f"Fragmentos:\n\n{fragments}\n\nPregunta: {question}\n\n""Responde en el mismo idioma en que está escrita la pregunta.")
     return [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": user_content},
