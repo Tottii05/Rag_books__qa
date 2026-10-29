@@ -18,7 +18,14 @@ SYSTEM_PROMPT = (
     "Responde en el mismo idioma en que se te pregunta, de forma clara y breve."
 )
 
+TRANSLATE_PROMPT = (
+    "Traduce la pregunta del usuario al español. Si ya está en español, "
+    "devuélvela exactamente igual. Responde SOLO con la pregunta, sin comillas "
+    "ni explicaciones."
+)
+
 NO_HITS_MESSAGE = "No he encontrado fragmentos del libro relacionados con tu pregunta."
+
 class LLMError(RuntimeError):
     """Error con un mensaje pensado para enseñárselo al usuario."""
 
@@ -36,31 +43,57 @@ def build_messages(question: str, hits: list[dict]) -> list[dict]:
         {"role": "user", "content": user_content},
     ]
 
-def answer(question: str, hits: list[dict]) -> str:
-    """Devuelve la respuesta del LLM a partir de la pregunta y los fragmentos."""
-    if not hits:
-        return NO_HITS_MESSAGE
+def _chat(messages: list[dict], temperature: float = 0.2) -> str:
+    """Envía unos mensajes ya construidos al LLM y devuelve su texto."""
     model = os.getenv("LLM_MODEL")
     if not model:
         raise LLMError("Falta LLM_MODEL en el archivo .env")
+
     try:
         response = get_client().chat.completions.create(
             model=model,
-            messages=build_messages(question, hits),
-            temperature=0.2,  # más fiel al texto, menos creativo
+            messages=messages,  # ya vienen construidos: no se vuelven a construir
+            temperature=temperature,
         )
     except openai.RateLimitError as exc:
-        raise LLMError("Se ha alcanzado el límite de peticiones del LLM. Espera un minuto e inténtalo de nuevo.") from exc
+        raise LLMError("Se ha alcanzado el límite de peticiones del LLM. "
+                       "Espera un minuto e inténtalo de nuevo.") from exc
     except openai.AuthenticationError as exc:
         raise LLMError("La clave del LLM no es válida: revisa LLM_API_KEY en .env") from exc
     except openai.NotFoundError as exc:
-        raise LLMError(f"El modelo '{model}' no existe en este servicio: revisa LLM_MODEL en .env") from exc
+        raise LLMError(f"El modelo '{model}' no existe en este servicio: "
+                       "revisa LLM_MODEL en .env") from exc
     except openai.APIConnectionError as exc:
-        raise LLMError("No se pudo conectar con el LLM: revisa LLM_BASE_URL y tu conexión a internet.") from exc
+        raise LLMError("No se pudo conectar con el LLM: revisa LLM_BASE_URL "
+                       "y tu conexión a internet.") from exc
+
     text = response.choices[0].message.content
     if not text:
-        raise LLMError("El modelo devolvió una respuesta vacía. Prueba con otro modelo cambiando LLM_MODEL en .env")
+        raise LLMError("El modelo devolvió una respuesta vacía. "
+                       "Prueba con otro modelo cambiando LLM_MODEL en .env")
     return text.strip()
+
+def answer(question: str, hits: list[dict]) -> str:
+    """Devuelve la respuesta del LLM a partir de la pregunta y los fragmentos."""
+    if not hits:  # sin fragmentos no tiene sentido gastar una llamada al LLM
+        return NO_HITS_MESSAGE
+    return _chat(build_messages(question, hits))
+
+def to_spanish(question: str) -> str:
+    """Traduce la pregunta al español para buscar en el libro.
+
+    La traducción es una mejora opcional: si algo falla, se usa la pregunta original.
+    """
+    messages = [
+        {"role": "system", "content": TRANSLATE_PROMPT},
+        {"role": "user", "content": question},
+    ]
+    try:
+        translated = _chat(messages, temperature=0)  # temperatura 0: traducción estable
+    except LLMError:
+        return question
+    translated = translated.strip('"«» \n')  # quita comillas, espacios y saltos sobrantes
+    return translated or question
 
 def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")  # acentos correctos en Windows
@@ -68,8 +101,10 @@ def main() -> None:
     parser.add_argument("question", nargs="+", help="la pregunta")
     parser.add_argument("--top-k", type=int, default=5)
     args = parser.parse_args()
+
     # Importado aquí para que llm.py se pueda usar sin necesitar Pinecone.
     from src.retrieval import search
+
     question = " ".join(args.question)
     hits = search(question, top_k=args.top_k)
     try:
