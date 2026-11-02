@@ -1,0 +1,320 @@
+{
+  "max_k": 8,
+  "summary": {
+    "es/original": {
+      "n": 17,
+      "hit@3": 0.7647058823529411,
+      "hit@5": 0.8823529411764706,
+      "hit@8": 0.9411764705882353,
+      "mrr": 0.7338935574229692
+    },
+    "ca/original": {
+      "n": 3,
+      "hit@3": 0.3333333333333333,
+      "hit@5": 0.3333333333333333,
+      "hit@8": 0.3333333333333333,
+      "mrr": 0.3333333333333333
+    },
+    "ca/traducida": {
+      "n": 3,
+      "hit@3": 0.6666666666666666,
+      "hit@5": 0.6666666666666666,
+      "hit@8": 0.6666666666666666,
+      "mrr": 0.6666666666666666
+    },
+    "en/original": {
+      "n": 3,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@8": 1.0,
+      "mrr": 0.7777777777777778
+    },
+    "en/traducida": {
+      "n": 3,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@8": 1.0,
+      "mrr": 1.0
+    },
+    "ru/original": {
+      "n": 2,
+      "hit@3": 0.5,
+      "hit@5": 0.5,
+      "hit@8": 0.5,
+      "mrr": 0.5
+    },
+    "ru/traducida": {
+      "n": 2,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@8": 1.0,
+      "mrr": 1.0
+    }
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Qué le pasó a don Quijote con los molinos de viento?",
+      "query": "¿Qué le pasó a don Quijote con los molinos de viento?",
+      "rank": 1
+    },
+    {
+      "id": "q02",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Cómo se llama el caballo de don Quijote?",
+      "query": "¿Cómo se llama el caballo de don Quijote?",
+      "rank": 7
+    },
+    {
+      "id": "q03",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Qué es el yelmo de Mambrino?",
+      "query": "¿Qué es el yelmo de Mambrino?",
+      "rank": 1
+    },
+    {
+      "id": "q04",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Qué ínsula gobierna Sancho Panza?",
+      "query": "¿Qué ínsula gobierna Sancho Panza?",
+      "rank": 4
+    },
+    {
+      "id": "q05",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Cómo muere don Quijote?",
+      "query": "¿Cómo muere don Quijote?",
+      "rank": 1
+    },
+    {
+      "id": "q06",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Quién es Dulcinea del Toboso?",
+      "query": "¿Quién es Dulcinea del Toboso?",
+      "rank": 1
+    },
+    {
+      "id": "q07",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Qué hizo don Quijote con los galeotes?",
+      "query": "¿Qué hizo don Quijote con los galeotes?",
+      "rank": 1
+    },
+    {
+      "id": "q08",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Cómo termina la pelea de don Quijote con el vizcaíno?",
+      "query": "¿Cómo termina la pelea de don Quijote con el vizcaíno?",
+      "rank": 1
+    },
+    {
+      "id": "q09",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Quién era el Caballero de la Blanca Luna?",
+      "query": "¿Quién era el Caballero de la Blanca Luna?",
+      "rank": 1
+    },
+    {
+      "id": "q10",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Por qué mantean a Sancho Panza en la venta?",
+      "query": "¿Por qué mantean a Sancho Panza en la venta?",
+      "rank": 4
+    },
+    {
+      "id": "q11",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Qué cuenta don Quijote que vio en la cueva de Montesinos?",
+      "query": "¿Qué cuenta don Quijote que vio en la cueva de Montesinos?",
+      "rank": 1
+    },
+    {
+      "id": "q12",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Quién era el Caballero de los Espejos?",
+      "query": "¿Quién era el Caballero de los Espejos?",
+      "rank": 1
+    },
+    {
+      "id": "q13",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Qué pasa con los libros de don Quijote cuando el cura y el barbero revisan su biblioteca?",
+      "query": "¿Qué pasa con los libros de don Quijote cuando el cura y el barbero revisan su biblioteca?",
+      "rank": null
+    },
+    {
+      "id": "q14",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿De qué murió el pastor Grisóstomo?",
+      "query": "¿De qué murió el pastor Grisóstomo?",
+      "rank": 1
+    },
+    {
+      "id": "q15",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Qué penitencia hace don Quijote en Sierra Morena?",
+      "query": "¿Qué penitencia hace don Quijote en Sierra Morena?",
+      "rank": 3
+    },
+    {
+      "id": "q16",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Quién es Maritornes?",
+      "query": "¿Quién es Maritornes?",
+      "rank": 1
+    },
+    {
+      "id": "q17",
+      "lang": "es",
+      "mode": "original",
+      "question": "¿Cómo son las bodas de Camacho?",
+      "query": "¿Cómo son las bodas de Camacho?",
+      "rank": 2
+    },
+    {
+      "id": "m01",
+      "lang": "ca",
+      "mode": "original",
+      "question": "Com mor Don Quixot?",
+      "query": "Com mor Don Quixot?",
+      "rank": null
+    },
+    {
+      "id": "m01",
+      "lang": "ca",
+      "mode": "traducida",
+      "question": "Com mor Don Quixot?",
+      "query": "¿Cómo muere Don Quijote?",
+      "rank": 1
+    },
+    {
+      "id": "m02",
+      "lang": "ca",
+      "mode": "original",
+      "question": "Què li va passar a Don Quixot amb els molins de vent?",
+      "query": "Què li va passar a Don Quixot amb els molins de vent?",
+      "rank": 1
+    },
+    {
+      "id": "m02",
+      "lang": "ca",
+      "mode": "traducida",
+      "question": "Què li va passar a Don Quixot amb els molins de vent?",
+      "query": "¿Qué le pasó a Don Quijote con los molinos de viento?",
+      "rank": 1
+    },
+    {
+      "id": "m03",
+      "lang": "ca",
+      "mode": "original",
+      "question": "Com es diu el cavall de Don Quixot?",
+      "query": "Com es diu el cavall de Don Quixot?",
+      "rank": null
+    },
+    {
+      "id": "m03",
+      "lang": "ca",
+      "mode": "traducida",
+      "question": "Com es diu el cavall de Don Quixot?",
+      "query": "¿Cómo se llama el caballo de Don Quijote?",
+      "rank": null
+    },
+    {
+      "id": "m04",
+      "lang": "en",
+      "mode": "original",
+      "question": "How does Don Quixote die?",
+      "query": "How does Don Quixote die?",
+      "rank": 1
+    },
+    {
+      "id": "m04",
+      "lang": "en",
+      "mode": "traducida",
+      "question": "How does Don Quixote die?",
+      "query": "¿Cómo muere Don Quijote?",
+      "rank": 1
+    },
+    {
+      "id": "m05",
+      "lang": "en",
+      "mode": "original",
+      "question": "What happened to Don Quixote with the windmills?",
+      "query": "What happened to Don Quixote with the windmills?",
+      "rank": 1
+    },
+    {
+      "id": "m05",
+      "lang": "en",
+      "mode": "traducida",
+      "question": "What happened to Don Quixote with the windmills?",
+      "query": "¿Qué le pasó a Don Quijote con los molinos?",
+      "rank": 1
+    },
+    {
+      "id": "m06",
+      "lang": "en",
+      "mode": "original",
+      "question": "Who is Dulcinea del Toboso?",
+      "query": "Who is Dulcinea del Toboso?",
+      "rank": 3
+    },
+    {
+      "id": "m06",
+      "lang": "en",
+      "mode": "traducida",
+      "question": "Who is Dulcinea del Toboso?",
+      "query": "¿Quién es Dulcinea del Toboso?",
+      "rank": 1
+    },
+    {
+      "id": "m07",
+      "lang": "ru",
+      "mode": "original",
+      "question": "Как умирает Дон Кихот?",
+      "query": "Как умирает Дон Кихот?",
+      "rank": 1
+    },
+    {
+      "id": "m07",
+      "lang": "ru",
+      "mode": "traducida",
+      "question": "Как умирает Дон Кихот?",
+      "query": "¿Cómo muere Don Quijote?",
+      "rank": 1
+    },
+    {
+      "id": "m08",
+      "lang": "ru",
+      "mode": "original",
+      "question": "Что случилось с Дон Кихотом и ветряными мельницами?",
+      "query": "Что случилось с Дон Кихотом и ветряными мельницами?",
+      "rank": null
+    },
+    {
+      "id": "m08",
+      "lang": "ru",
+      "mode": "traducida",
+      "question": "Что случилось с Дон Кихотом и ветряными мельницами?",
+      "query": "¿Qué pasó con Don Quijote y los molinos de viento?",
+      "rank": 1
+    }
+  ]
+}
