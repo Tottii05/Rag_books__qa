@@ -1,4 +1,4 @@
-pinecone 
-openai
-python-dotenv
-streamlitpu
+pinecone==10.2.0
+openai==3.39.0
+python-dotenv==1.2.4
+streamlit==1.66.1
