@@ -1,0 +1,305 @@
+{
+  "top_k": 8,
+  "rows": [
+    {
+      "id": "q01",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué le pasó a don Quijote con los molinos de viento?",
+      "answer": "Don Quijote, al ver los molinos de viento, los tomó por gigantes y los atacó con la lanza. Al impactar contra la primera aspa, el viento hizo girar la pieza con tal fuerza que la lanza se partió y, arrastrado por el molino, cayó al suelo junto a Rocinante, quedando maltrecho y rodando por el campo【Parte I, capítulo VIII】. Sancho Panza acudió a socorrerle, pero encontró a su señor inmóvil por el fuerte golpe recibido【Parte I, capítulo VIII】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "q02",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Cómo se llama el caballo de don Quijote?",
+      "answer": "El caballo de don Quijote se llama **Rocinante**【Parte I, capítulo I】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": true
+    },
+    {
+      "id": "q03",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué es el yelmo de Mambrino?",
+      "answer": "El yelmo de Mambrino no es un verdadero casco de caballero, sino una bacía de barbero que don Quijote confunde con un yelmo — un simple recipiente de barbero que él cree que es la famosa celada — [Parte I, capítulo XXV]; [Parte I, capítulo XXI].",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "q04",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué ínsula gobierna Sancho Panza?",
+      "answer": "Sancho Panza es gobernador de la ínsula Barataria【Parte II, capítulo LV】.",
+      "refusal": false,
+      "cited": false,
+      "kw_hit": null
+    },
+    {
+      "id": "q05",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Cómo muere don Quijote?",
+      "answer": "Don Quijote muere tranquilamente en su lecho, después de haber padecido una fuerte calentura que lo mantuvo seis días en la cama, rodeado de sus amigos y tras haber hecho su testamento. [Parte II, capítulo LXXIV] [Parte II, capítulo LXXIV]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "q06",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Quién es Dulcinea del Toboso?",
+      "answer": "Dulcinea del Toboso es la dama idealizada de don Quijote; es el nombre que él da a Aldonza Lorenzo, una joven labradora del Toboso, a quien eleva a la condición de su “señora, princesa y reina” en sus pensamientos caballerescos【Parte I, capítulo I】. En sus discursos la describe como una figura de belleza sobrehumana y de linaje noble, la única mujer a quien dedica su amor y servicio【Parte I, capítulo XIII】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": true
+    },
+    {
+      "id": "q07",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué hizo don Quijote con los galeotes?",
+      "answer": "Don Quijote reunió a los galeotes, les quitó la cadena que llevaban al cuello y les mandó que se dirigieran a la ciudad del Toboso para presentarse ante la señora Dulcinea y contarle sus aventuras. [Parte I, capítulo XXII]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "q08",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Cómo termina la pelea de don Quijote con el vizcaíno?",
+      "answer": "No aparece en los fragmentos consultados cómo termina la pelea entre don Quijote y el vizcaíno.",
+      "refusal": true,
+      "cited": false,
+      "kw_hit": null
+    },
+    {
+      "id": "q09",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Quién era el Caballero de la Blanca Luna?",
+      "answer": "No aparece en los fragmentos consultados quién era realmente el Caballero de la Blanca Luna; sólo se le menciona como un caballero que lleva ese nombre y que se enfrenta a don Quijote. [Parte II, capítulo LXIV] y [Parte II, capítulo LXV].",
+      "refusal": true,
+      "cited": true,
+      "kw_hit": false
+    },
+    {
+      "id": "q10",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Por qué mantean a Sancho Panza en la venta?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": false,
+      "kw_hit": null
+    },
+    {
+      "id": "q11",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué cuenta don Quijote que vio en la cueva de Montesinos?",
+      "answer": "Don Quijote relata que el venerable Montesinos lo introdujo en un “palacio cristalino”, donde en una sala baja, muy fresca y hecha de alabastro, había un sepulcro de mármol de gran maestría; sobre él vio a un caballero tendido, no de bronce, mármol ni jaspe, sino “de pura carne y de puros huesos”【Parte II, capítulo XXIII】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "q12",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Quién era el Caballero de los Espejos?",
+      "answer": "El Caballero de los Espejos era en realidad el bachiller Sansón Carrasco, quien se hacía pasar por caballero andante bajo ese nombre para enfrentarse a don Quijote【Parte II, capítulo LXV】.",
+      "refusal": false,
+      "cited": false,
+      "kw_hit": true
+    },
+    {
+      "id": "q13",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué pasa con los libros de don Quijote cuando el cura y el barbero revisan su biblioteca?",
+      "answer": "Cuando el cura y el barbero revisan la biblioteca de don Quijote descubren varios libros (por ejemplo, la *Novela del curioso impertinente* y otros títulos que hallan en una maleta) y los leen o los guardan para leerlos después. Luego discuten la posibilidad de quemar algunos volúmenes, pero sólo mencionan quemar obras como la de Don Cirongilio, la de Felixmarte, la del Gran Capitán o la de Diego García; no se dice que quemaran los libros de don Quijote, que permanecen en su posesión.  \n\n[Parte I, capítulo XLVII] – hallan y guardan los libros.  \n[Parte I, capítulo XXXII] – discuten quemar ciertos libros, pero no los de don Quijote.",
+      "refusal": false,
+      "cited": false,
+      "kw_hit": null
+    },
+    {
+      "id": "q14",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿De qué murió el pastor Grisóstomo?",
+      "answer": "Murió a causa de los amores que le provocó la moza Marcela; se dice que “murió… de amores de aquella endiablada moza de Marcela”【Parte I, capítulo XII】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": true
+    },
+    {
+      "id": "q15",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué penitencia hace don Quijote en Sierra Morena?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": false,
+      "kw_hit": null
+    },
+    {
+      "id": "q16",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Quién es Maritornes?",
+      "answer": "Maritornes es la joven asturiana que sirve como moza en la venta donde se encuentran don Quijote y Sancho; aparece como la “asturiana” o “buena de Maritornes” que ayuda a los viajeros y participa en los incidentes con ellos【[Parte I, capítulo XVI]】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "q17",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Cómo son las bodas de Camacho?",
+      "answer": "Las bodas de Camacho se describen como un espectáculo **extraordinario y novedoso**, celebrado en un prado junto al pueblo de la novia Quiteria [Parte II, capítulo XIX]. El “aparato” de la boda, aunque rústico, es **tan abundante que podría sustentar a un ejército** [Parte II, capítulo XX]. Además, Camacho, siendo liberal, dispone que todo el prado quede cubierto para que el sol apenas se vea y así poder celebrar la fiesta con gran pompa [Parte II, capítulo XIX].",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "o01",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Quién ganó el Mundial de fútbol de 2010?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o02",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Cuál es la capital de Australia?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o03",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Cómo se prepara una paella valenciana?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o04",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Cómo funciona el motor de un coche?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o05",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Quién es Harry Potter?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "m01",
+      "type": "answerable",
+      "lang": "ca",
+      "question": "Com mor Don Quixot?",
+      "answer": "Mor al seu llit, després d’una calor que el va tenir sis dies, morint tranquil·lament i amb Sancho Panza al seu costat. [Parte II, capítulo LXXIV] — [Parte II, capítulo LXV]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "m02",
+      "type": "answerable",
+      "lang": "ca",
+      "question": "Què li va passar a Don Quixot amb els molins de vent?",
+      "answer": "Va atacar els molins de vent, donant una llançada a l’aspes; el vent va girar‑les amb tanta força que li va trencar la llança i va fer que ell i Rocinante cauen, quedant molt maltreches i rodant pel camp. [Parte I, capítulo VIII]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "m03",
+      "type": "answerable",
+      "lang": "ca",
+      "question": "Com es diu el cavall de Don Quixot?",
+      "answer": "El cavall de Don Quixot es diu **Rocinante**【Parte II, capítulo XL】.",
+      "refusal": false,
+      "cited": false,
+      "kw_hit": true
+    },
+    {
+      "id": "m04",
+      "type": "answerable",
+      "lang": "en",
+      "question": "How does Don Quixote die?",
+      "answer": "Don Quixote dies after a six‑day fever; he receives the last sacraments, spends his final days in bed with Sancho Panza at his side, and passes away peacefully in his own bed. [Parte II, capítulo LXXIV] [Parte II, capítulo LXXIV]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "m05",
+      "type": "answerable",
+      "lang": "en",
+      "question": "What happened to Don Quixote with the windmills?",
+      "answer": "Don Quixote charged at a windmill, thrust his lance into one of its blades, and the wind snapped the lance, throwing both him and Rocinante to the ground where they lay badly battered. Sancho Panza rushed to help him, finding him unable to move after the blow. [Parte I, capítulo VIII]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "m06",
+      "type": "answerable",
+      "lang": "en",
+      "question": "Who is Dulcinea del Toboso?",
+      "answer": "Dulcinea del Toboso is the ideal lady invented by Don Quixote. She is really Aldonza Lorenzo, a modest peasant girl from the village of El Toboso, whom Quixote elevates to the status of a princess‑queen and makes the object of his chivalric devotion【[Parte I, capítulo I]】. In his own words she is “the lady of his thoughts, a queen and my señora,” endowed with super‑human beauty and noble lineage in his imagination【[Parte I, capítulo XIII]】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": true
+    },
+    {
+      "id": "m07",
+      "type": "answerable",
+      "lang": "ru",
+      "question": "Как умирает Дон Кихот?",
+      "answer": "Дон Кихот умер от сильной лихорадки, проведя шесть дней в постели, спокойно, рядом с Санчо Пансой — его смерть описана как «умер в своём ложе так спокойно и христиански», после того как «у него возникла лихорадка, которая держала его шесть дней в кровати, к нему приходили священник, бакалавр и барбер, но Санчо Панса не отходил от его постели»【Parte II, capítulo LXXIV】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "m08",
+      "type": "answerable",
+      "lang": "ru",
+      "question": "Что случилось с Дон Кихотом и ветряными мельницами?",
+      "answer": "Дон Кихот, приняв ветряные мельницы за гигантов, бросился на первый из них с копьём, но сильный порыв ветра раскрыл лопасти, сломал копьё и сбил его с коня, оставив его тяжело раненым и лежащим на поле; Санчо, пришедший на помощь, нашёл его неспособным двигаться. [Parte I, capítulo VIII] \n\nОн упорно продолжал считать мельницы «гигантами», несмотря на предупреждения Санчо, и после удара ветра был вынужден отступать, получив серьёзные травмы. [Parte I, capítulo VIII]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    }
+  ]
+}

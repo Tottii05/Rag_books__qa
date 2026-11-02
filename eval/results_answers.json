@@ -1,11 +1,12 @@
 {
+  "top_k": 5,
   "rows": [
     {
       "id": "q01",
       "type": "answerable",
       "lang": "es",
       "question": "¿Qué le pasó a don Quijote con los molinos de viento?",
-      "answer": "Don Quijote arremetió contra el primer molino de viento, pero la lanza que le dio a la aspa se partió y el fuerte golpe del molino lo derribó a él y a Rocinante, quedando rodando maltrecho por el campo; Sancho Panza acudió a socorrerle. [Parte I, capítulo VIII]",
+      "answer": "Don Quijote, al confundir los molinos de viento con gigantes, los atacó con la lanza. Cuando el viento hizo girar las grandes aspas, la lanza se partió y el golpe lanzó al caballero y a Rocinante por el campo, dejándolos muy maltrechos e incapaces de moverse; Sancho tuvo que socorrerlo y ayudarle a ponerse de pie nuevamente【[Parte I, capítulo VIII]】.",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -15,7 +16,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Cómo se llama el caballo de don Quijote?",
-      "answer": "El caballo de don Quijote se llama **Rocinante**【Parte II, capítulo XL】.",
+      "answer": "El caballo de don Quijote se llama **Rocinante**【Parte II, capítulo XL】【Parte I, capítulo XXVI】",
       "refusal": false,
       "cited": false,
       "kw_hit": true
@@ -25,7 +26,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Qué es el yelmo de Mambrino?",
-      "answer": "El yelmo de Mambrino es, en realidad, una bacía de barbero que don Quijote confunde con un auténtico yelmo de caballero — una simple vasija que él toma por el legendario casco de Mambrino【Parte I, capítulo XXV】, 【Parte I, capítulo XXX】.",
+      "answer": "El yelmo de Mambrino es, en realidad, una bacía de barbero que don Quijote confunde con un auténtico yelmo de caballero — una simple vasija de barbero que él cree que es el legendario casco de Mambrino【Parte I, capítulo XXV】.",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -35,7 +36,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Qué ínsula gobierna Sancho Panza?",
-      "answer": "Sancho Panza llegó a gobernar la **ínsula Barataria**【Parte II, capítulo LIV】.",
+      "answer": "Sancho Panza gobierna la ínsula Barataria【Parte II, capítulo LIV】.",
       "refusal": false,
       "cited": false,
       "kw_hit": null
@@ -45,7 +46,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Cómo muere don Quijote?",
-      "answer": "Don Quijote muere tranquilamente en su lecho, después de haber recibido los sacramentos y de haber sido acompañado por los que estaban allí; su muerte se describe como “tan sosegadamente y tan cristiano” [Parte II, capítulo LXXIV].",
+      "answer": "Don Quijote muere en su lecho, después de haber recibido todos los sacramentos, de manera tranquila y cristiana. [Parte II, capítulo LXXIV]",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -55,7 +56,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Quién es Dulcinea del Toboso?",
-      "answer": "Dulcinea del Toboso es el nombre que Don Quijote otorga a la dama idealizada a quien dedica sus hazañas; se trata de Aldonza Lorenzo, una joven labradora del Toboso, a quien él eleva a la condición de señora, princesa y reina de sus pensamientos y describe con innumerables atributos de belleza y nobleza【Parte I, capítulo I】; su figura es presentada como la perfecta dama a quien el caballero sirve y a quien atribuye cualidades sobrehumanas y de linaje ilustre【Parte I, capítulo XIII】.",
+      "answer": "Dulcinea del Toboso es el nombre idealizado que Don Quijote otorga a Aldonza Lorenzo, una joven labradora del Toboso, a quien él eleva a la condición de su dama, princesa y señora, describiéndola con atributos de belleza sobrehumana y perfección. [Parte I, capítulo I] [Parte I, capítulo XIII]",
       "refusal": false,
       "cited": true,
       "kw_hit": true
@@ -65,7 +66,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Qué hizo don Quijote con los galeotes?",
-      "answer": "Don Quijote quitó a los galeotes la cadena que llevaban atados y, llamándolos a todos, les ordenó que se dirigieran a la ciudad del Toboso para presentarse ante la señora Dulcinea, contarle sus hazañas y, una vez hecho eso, quedar libres para ir donde quisieran【Parte I, capítulo XXII】.",
+      "answer": "Don Quijote reunió a los galeotes, les quitó las cadenas que llevaban y, como caballero, les ordenó que se dirigieran a la ciudad del Toboso para presentarse ante la señora Dulcinea, contarle punto por punto las hazañas de su famosa aventura y, una vez hecho eso, les concedió la libertad para ir donde quisieran【Parte I, capítulo XXII】.",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -75,7 +76,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Cómo termina la pelea de don Quijote con el vizcaíno?",
-      "answer": "No aparece en los fragmentos consultados cómo termina la pelea entre don Quijote y el vizcaíno. [Parte I, capítulo VIII] y [Parte I, capítulo IX] describen la contienda pero no dan su desenlace.",
+      "answer": "No aparece en los fragmentos consultados; los textos dejan la batalla inconclusa y el autor se disculpa por no haberla terminado [Parte I, capítulo VIII].",
       "refusal": true,
       "cited": true,
       "kw_hit": null
@@ -85,8 +86,8 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Quién era el Caballero de la Blanca Luna?",
-      "answer": "No aparece en los fragmentos consultados quién era realmente el Caballero de la Blanca Luna; los pasajes solo lo describen como un caballero armado de punta en blanco con una luna en el escudo, sin revelar su nombre ni su identidad. [Parte II, capítulo LXIV] ; [Parte II, capítulo LXV]",
-      "refusal": true,
+      "answer": "No se indica en los fragmentos quién era realmente el Caballero de la Blanca Luna; sólo se menciona su aparición y sus interacciones con don Quijote y don Antonio Moreno, sin revelar su identidad. [Parte II, capítulo LXIV]",
+      "refusal": false,
       "cited": true,
       "kw_hit": false
     },
@@ -95,7 +96,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Por qué mantean a Sancho Panza en la venta?",
-      "answer": "Lo hacen para divertirse con él, tratándolo como a un perro en una fiesta de carnaval, levantándolo en alto sobre la manta. [Parte I, capítulo XVII]",
+      "answer": "Porque lo ponen en medio de la manta y lo levantan para divertirse con él como si fuera un perro, como parte de una fiesta o carnestolendas. [Parte I, capítulo XVII]",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -105,7 +106,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Qué cuenta don Quijote que vio en la cueva de Montesinos?",
-      "answer": "Don Quijote relata que, al adentrarse en la cueva, encontró una gran concavidad a la derecha, lo suficientemente amplia como para caber “un gran carro con sus mulas”. Por unos resquicios o agujeros de la superficie de la tierra entraba una pequeña luz que iluminaba ese espacio interior【[Parte II, capítulo XXIII]】.",
+      "answer": "Don Quijote relata que, al adentrarse en la cueva, encontró una gran concavidad a la derecha que podía albergar “un gran carro con sus mulas”. Por unos resquicios o agujeros entraba una tenue luz que iluminaba ese espacio. Fue allí donde, cansado y colgado de la soga, decidió entrar y descansar un momento, pidiendo que no se le soltara la cuerda hasta que él lo indicara【[Parte II, capítulo XXIII]】.",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -115,7 +116,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Quién era el Caballero de los Espejos?",
-      "answer": "El Caballero de los Espejos era en realidad el bachiller Sansón Carrasco, quien se hizo pasar por caballero andante bajo ese nombre para enfrentarse a don Quijote【Parte II, capítulo LXV】.",
+      "answer": "El Caballero de los Espejos era el bachiller Sansón Carrasco, quien se hizo pasar por caballero andante bajo ese nombre para enfrentarse a Don Quijote【Parte II, capítulo LXV】.",
       "refusal": false,
       "cited": false,
       "kw_hit": true
@@ -125,7 +126,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Qué pasa con los libros de don Quijote cuando el cura y el barbero revisan su biblioteca?",
-      "answer": "Al revisar la biblioteca, el cura abre los tomos, descubre que al comienzo de uno dice «Novela de Rinconete y Cortadillo», lo reconoce como una obra similar a la del Curioso impertinente y decide guardarla para leerla cuando le sea posible. [Parte I, capítulo XLVII]",
+      "answer": "Al revisar la biblioteca, el cura abre los tomos y descubre, al principio, una obra titulada *Novela de Rinconete y Cortadillo*; la reconoce como una novela y, al compararla con la del *Curioso impertinente*, supone que podría ser del mismo autor, por lo que la guarda para leerla cuando tenga ocasión【Parte I, capítulo XLVII】.",
       "refusal": false,
       "cited": false,
       "kw_hit": null
@@ -135,7 +136,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿De qué murió el pastor Grisóstomo?",
-      "answer": "Murió a causa de los amores que sentía por la moza Marcela —se dice que su muerte fue “de amores de aquella endiablada moza de Marcela”【Parte I, capítulo XII】.",
+      "answer": "Murió supuestamente “de amores” de la pastora Marcela, según se comenta en el relato. [Parte I, capítulo XII]",
       "refusal": false,
       "cited": true,
       "kw_hit": true
@@ -145,7 +146,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Qué penitencia hace don Quijote en Sierra Morena?",
-      "answer": "No aparece en los fragmentos consultados información sobre la penitencia que hace don Quijote en Sierra Morena.",
+      "answer": "No aparece en los fragmentos consultados información sobre la penitencia que realiza don Quijote en Sierra Morena.",
       "refusal": true,
       "cited": false,
       "kw_hit": null
@@ -155,7 +156,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Quién es Maritornes?",
-      "answer": "Maritornes es una joven moza (una sirvienta/asturiana de la posada) que aparece en la escena del mesón; es la mujer que se encuentra junto a Don Quijote y Sancho, participa en los diálogos y en los desencuentros con los demás personajes. [Parte I, capítulo XVI] [Parte I, capítulo XLVII]",
+      "answer": "Maritornes es una joven moza (una asturiana) que trabaja en la venta/posada; es la muchacha que aparece en los encuentros de don Quijote y Sancho, tanto cuando es asida por don Quijote como cuando intervienen el arriero y el ventero. 【[Parte I, capítulo XVI]】【[Parte I, capítulo XLVII]】",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -165,7 +166,7 @@
       "type": "answerable",
       "lang": "es",
       "question": "¿Cómo son las bodas de Camacho?",
-      "answer": "Las bodas de Camacho se celebran en un prado junto al pueblo de la novia y cuentan con un aparato “extraordinario y nuevo”, pues el rico Camacho dispone que todo el prado quede cubierto y que la fiesta se desarrolle como si realmente se desposara【Parte II, capítulo XIX】.  \nAunque el montaje es rústico, es tan abundante que “podía sustentar a un ejército”, con innumerables ollas, cazuelas y frutas que asombran a Sancho Panza【Parte II, capítulo XX】.  \nAun cuando algunos personajes (Basilio y su esposa) se niegan a asistir, Camacho y sus valedores continúan con la celebración, mostrando la pompa y el poder de su riqueza【Parte II, capítulo XXI】.",
+      "answer": "Las bodas de Camacho se presentan como una celebración extraordinaria y novedosa, organizada en un prado y con un “aparato” tan grande que cubre todo el terreno; aunque rústico, es tan abundante que podría sostener a un ejército, con innumerables ollas, carnes y frutas al alcance de los invitados【Parte II, capítulo XIX】【Parte II, capítulo XX】.",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -225,7 +226,7 @@
       "type": "answerable",
       "lang": "ca",
       "question": "Com mor Don Quixot?",
-      "answer": "Mor després d’una calor que el va tenir sis dies al llit, rep els sagraments i, tranquil·lament, mor al seu llit, com mai s’havia vist en cap cavaller andant. [Parte II, capítulo LXXIV]",
+      "answer": "Mor després d’una calor que el manté sis dies al llit i acaba morint tranquil·lament al seu llit. [Parte II, capítulo LXXIV] — [Parte II, capítulo LXV]",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -235,7 +236,7 @@
       "type": "answerable",
       "lang": "ca",
       "question": "Què li va passar a Don Quixot amb els molins de vent?",
-      "answer": "Don Quixot, creient que els molins eren gegants, els atacà a cavall. En el moment en què les grans aspes del molí començaren a moure‑se, la seva llança es trencà i el vent el feia volar: el va arrossegar a ell i a Rocinant al terra, deixant‑lo molt maltretat i rodant pel camp【[Parte I, capítulo VIII]】.",
+      "answer": "Don Quixot, creient que els molins eren gegants, els atacà amb la llança. En donar‑les una copada, el vent va fer girar les grans aspes i la llança es va trencar; el cop va fer que ell i Rocinante quedessin llançats al terra, rodant molt maltretats i incapaços de moure‑se, fins que Sanxo Pança va arribar per ajudar‑lo【[Parte I, capítulo VIII]】.",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -245,7 +246,7 @@
       "type": "answerable",
       "lang": "ca",
       "question": "Com es diu el cavall de Don Quixot?",
-      "answer": "El cavall de Don Quixot es diu **Rocinante**【Parte I, capítulo XXVI】.",
+      "answer": "El cavall de Don Quixot es diu **Rocinante**【Parte II, capítulo XIV】.",
       "refusal": false,
       "cited": false,
       "kw_hit": true
@@ -255,7 +256,7 @@
       "type": "answerable",
       "lang": "en",
       "question": "How does Don Quixote die?",
-      "answer": "Don Quixote dies after a six‑day fever that keeps him confined to his bed; he receives the last sacraments, is visited by the priest, the bachelor and the barber, and finally passes away peacefully in his own bed, “so sosegadamente y tan cristiano”【Parte II, capítulo LXXIV】.",
+      "answer": "Don Quixote dies peacefully in his own bed after a fever that kept him ill for six days; he receives the last sacraments, is attended by his friends and especially by Sancho Panza, and passes away calmly and “cristianamente.” [Parte II, capítulo LXXIV]",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -265,7 +266,7 @@
       "type": "answerable",
       "lang": "en",
       "question": "What happened to Don Quixote with the windmills?",
-      "answer": "Don Quixote charged at the first wind‑mill, thrust his lance into its blade and, when the wind turned the blade back, the lance shattered and he was thrown from Rocinante, rolling badly wounded across the field; Sancho Panza rushed to his aid and helped him get back on his horse. 【Parte I, capítulo VIII】",
+      "answer": "Don Quixote charged at a windmill, believing it to be a giant. He thrust his lance at the first sail, which the wind snapped, shattering his lance and throwing both him and Rocinante to the ground; he was left badly battered and unable to move. [Parte I, capítulo VIII]",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -275,7 +276,7 @@
       "type": "answerable",
       "lang": "en",
       "question": "Who is Dulcinea del Toboso?",
-      "answer": "Dulcinea del Toboso is the name Don Quixote gives to his imagined lady‑love: a peasant girl called Aldonza Lorenzo from the village of El Toboso, whom he elevates to the status of a noble, princess‑like queen of extraordinary beauty and virtue【Parte I, capítulo I】. He describes her with lofty, almost superhuman attributes, presenting her as the idealized object of his chivalric devotion【Parte I, capítulo XIII】.",
+      "answer": "Dulcinea del Toboso is the lady imagined by Don Quixote as the object of his chivalric love. She is actually Aldonza Lorenzo, a peasant girl from the village of Toboso, whom Quixote renames “Dulcinea” and elevates to the status of a princess‑queen of extraordinary beauty and virtue【[Parte I, capítulo I]】. In his speeches he describes her as a noble, well‑born lady whose lineage is hidalgo and whose attributes (golden hair, eyes like suns, etc.) are idealized beyond any ordinary woman【[Parte I, capítulo XIII]】【[Parte II, capítulo XXXII]】.",
       "refusal": false,
       "cited": true,
       "kw_hit": true
@@ -285,7 +286,7 @@
       "type": "answerable",
       "lang": "ru",
       "question": "Как умирает Дон Кихот?",
-      "answer": "Он умер от болезни — у него «аррагóсь» (развилась) сильная лихорадка, из‑за которой он провёл шесть дней в постели, а затем, спокойно и «христоматически», скончался в своём ложе, окружённый Санчо Пансой и другими близкими. 【Parte II, capítulo LXXIV】 【Parte II, capítulo LXV】",
+      "answer": "Дон Кихот умирает в своей постели, после шести дней болезни, когда у него поднялась сильная температура. Его посещают священник, бакалейщик и барбер, а рядом находится Санчо Панса; он получает все таинства и умирает спокойно и «христиански» — как отмечает писец. [Parte II, capítulo LXXIV] [Parte II, capítulo LXV]",
       "refusal": false,
       "cited": true,
       "kw_hit": null
@@ -295,7 +296,7 @@
       "type": "answerable",
       "lang": "ru",
       "question": "Что случилось с Дон Кихотом и ветряными мельницами?",
-      "answer": "Дон Кихот, приняв в поле несколько ветряных мельниц за «разбушевавшихся гигантов», бросился на первую из них с копьём. Ветер развернул лопасти, копьё раскололось, а рыцарь и его конь Рокинанте были сброшены с лошади и покатились по полю, сильно повреждённые [Parte I, capítulo VIII]. После падения Санчо Панса поспешил к нему, но обнаружил, что конь не может пошевелиться, и помогал ему подняться [Parte I, capítulo VIII]. Позднее, после того как «молотый» Дон Кихот и его спутники поднялись, он отдохнул, ожидая, пока к нему присоединятся Санчо, Рокинанте и «рцио» [Parte II, capítulo LVIII].",
+      "answer": "Дон Кихот принял мельницы за гигантов и бросился на первую из них, но сильный ветер сломал его копьё, сбил его с коня и оставил его тяжело раненым — «…le dio una lanzada en el aspa, la volvió el viento con tanta furia que hizo la lanza pedazos, llevándose tras sí al caballo y al caballero…» [Parte I, capítulo VIII]. После этого он был «молот» и «апоррéado» (повреждён) вместе с Рокинанте — «Quedó molido Sancho, espantado don Quijote, aporreado el rucio y no muy católico Rocinante…» [Parte II, capítulo LVIII].",
       "refusal": false,
       "cited": true,
       "kw_hit": null

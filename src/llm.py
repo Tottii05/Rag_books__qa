@@ -45,7 +45,7 @@ def build_messages(question: str, hits: list[dict]) -> list[dict]:
         {"role": "user", "content": user_content},
     ]
 
-def _chat(messages: list[dict], temperature: float = 0.2) -> str:
+def _chat(messages: list[dict], temperature: float = 0) -> str:
     """Envía unos mensajes ya construidos al LLM y devuelve su texto."""
     model = os.getenv("LLM_MODEL")
     if not model:
