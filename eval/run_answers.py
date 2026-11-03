@@ -14,11 +14,12 @@ sys.stdout.reconfigure(encoding="utf-8")
 REFUSAL_MARKERS = [
     "no aparece", "no he encontrado", "no se menciona", "no se mencionan",
     "no contienen", "no contiene", "no hay información", "no puedo responder",
-    "no se puede responder", "no se encuentra",
+    "no se puede responder", "no se encuentra", "no se indica",
 ]
 PAUSE = 3          # segundos entre preguntas
 MAX_RETRIES = 3
 OUT_PATH = "eval/results_answers.json"
+PARTIAL_PATH = "eval/results_answers_partial.json"
 
 def ask_with_retry(question, top_k):
     for attempt in range(MAX_RETRIES):
@@ -29,6 +30,7 @@ def ask_with_retry(question, top_k):
             print(f"  LLMError ({exc}); reintento {attempt + 1}/{MAX_RETRIES} en {wait}s")
             time.sleep(wait)
     return None  # agotados los reintentos: pregunta sin respuesta
+
 
 def normalize(text):
     text = unicodedata.normalize("NFKC", text).lower()
@@ -60,16 +62,19 @@ def rate(flags):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=None,
-                        help="solo las N primeras preguntas (para probar)")
-    parser.add_argument("--top-k", type=int, default=5,
-                        help="fragmentos que recibe el LLM")
+    parser.add_argument("--limit", type=int, default=None, help="solo las N primeras preguntas (para probar)")
+    parser.add_argument("--ids", nargs="+", default=None, help="solo estas preguntas, p. ej. --ids q08 q15 o01")
+    parser.add_argument("--top-k", type=int, default=5, help="fragmentos que recibe el LLM")
     args = parser.parse_args()
 
     with open("eval/questions.json", encoding="utf-8") as f:
         questions = json.load(f)
     if args.limit:
         questions = questions[: args.limit]
+    if args.ids:
+        questions = [q for q in questions if q["id"] in args.ids]
+        if not questions:
+            sys.exit("Ningún id coincide con questions.json")
 
     rows = []
     for i, q in enumerate(questions, 1):
@@ -89,8 +94,13 @@ def main():
         rows.append(row)
         time.sleep(PAUSE)
 
-    # k=5 guarda en results_answers.json; otros valores, en un fichero aparte
-    out_path = OUT_PATH if args.top_k == 5 else f"eval/results_answers_k{args.top_k}.json"
+    # Parcial -> fichero aparte; completo: k=5 en OUT_PATH, otros k en su fichero
+    if args.ids or args.limit:
+        out_path = PARTIAL_PATH
+    elif args.top_k == 5:
+        out_path = OUT_PATH
+    else:
+        out_path = f"eval/results_answers_k{args.top_k}.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump({"top_k": args.top_k, "rows": rows}, f, ensure_ascii=False, indent=2)
 
@@ -104,7 +114,6 @@ def main():
     print(f"Falsos rechazos en el resto:      {rate([r['refusal'] for r in normal])}")
     print(f"Cita un capítulo esperado:        {rate([r['cited'] for r in normal if r['cited'] is not None])}")
     print(f"Contiene palabra clave:           {rate([r['kw_hit'] for r in normal if r['kw_hit'] is not None])}")
-
     print("\n=== Respuestas out_of_scope (revísalas a ojo) ===")
     for r in oos:
         print(f"\n[{r['id']}] {r['question']}\n-> refusal={r['refusal']}\n{r['answer']}")

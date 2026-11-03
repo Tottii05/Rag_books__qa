@@ -1,0 +1,105 @@
+{
+  "top_k": 5,
+  "rows": [
+    {
+      "id": "q08",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Cómo termina la pelea de don Quijote con el vizcaíno?",
+      "answer": "No aparece en los fragmentos consultados cómo termina la pelea entre don Quijote y el vizcaíno.",
+      "refusal": true,
+      "cited": false,
+      "kw_hit": null
+    },
+    {
+      "id": "q09",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Quién era el Caballero de la Blanca Luna?",
+      "answer": "No aparece en los fragmentos consultados quién era exactamente el Caballero de la Blanca Luna; los pasajes sólo relatan su aparición y el desafío, pero no revelan su identidad. [Parte II, capítulo LXV]",
+      "refusal": true,
+      "cited": true,
+      "kw_hit": false
+    },
+    {
+      "id": "q10",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Por qué mantean a Sancho Panza en la venta?",
+      "answer": "Lo hacen para burlarse de él y divertirse como si fuera un perro en las fiestas de carnaval, poniéndole la manta a la mitad y levantándolo en alto. [Parte I, capítulo XVII]",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "q13",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué pasa con los libros de don Quijote cuando el cura y el barbero revisan su biblioteca?",
+      "answer": "Cuando el cura y el barbero revisan la biblioteca, el cura abre los tomos y, al leer el comienzo, descubre que dice «Novela de Rinconete y Cortadillo». Concluye que se trata de una novela y la guarda para leerla cuando tenga tiempo【Parte I, capítulo XLVII】.",
+      "refusal": false,
+      "cited": false,
+      "kw_hit": null
+    },
+    {
+      "id": "q15",
+      "type": "answerable",
+      "lang": "es",
+      "question": "¿Qué penitencia hace don Quijote en Sierra Morena?",
+      "answer": "Don Quijote se retiró a la Peña Pobre, en Sierra Morena, para hacer penitencia, adoptando allí el nombre de Beltenebros【Parte I, capítulo XXV】.",
+      "refusal": false,
+      "cited": true,
+      "kw_hit": null
+    },
+    {
+      "id": "o01",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Quién ganó el Mundial de fútbol de 2010?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o02",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Cuál es la capital de Australia?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o03",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Cómo se prepara una paella valenciana?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o04",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Cómo funciona el motor de un coche?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    },
+    {
+      "id": "o05",
+      "type": "out_of_scope",
+      "lang": "es",
+      "question": "¿Quién es Harry Potter?",
+      "answer": "No aparece en los fragmentos consultados.",
+      "refusal": true,
+      "cited": null,
+      "kw_hit": null
+    }
+  ]
+}

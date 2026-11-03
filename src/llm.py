@@ -38,7 +38,7 @@ def get_client() -> OpenAI:
 
 def build_messages(question: str, hits: list[dict]) -> list[dict]:
     """Construye los mensajes del chat: instrucciones + fragmentos + pregunta."""
-    fragments = "\n\n".join(f"[{hit['ref']}]\n{hit['text']}" for hit in hits)
+    fragments = "\n\n".join(f"[{hit['ref']}] {hit['title']}\n{hit['text']}" for hit in hits)
     user_content = (f"Fragmentos:\n\n{fragments}\n\nPregunta: {question}\n\n""Responde en el mismo idioma en que está escrita la pregunta.")
     return [
         {"role": "system", "content": SYSTEM_PROMPT},
